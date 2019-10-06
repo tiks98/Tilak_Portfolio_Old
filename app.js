@@ -13,6 +13,32 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
+
+app.use((req, res, next) => {
+  res.locals.title_index = 'Home';
+  next();
+});
+
+app.use((req, res, next) => {
+  res.locals.title_projects = 'Projects';
+  next();
+});
+
+app.use((req, res, next) => {
+  res.locals.title_contact = 'Contact';
+  next();
+});
+
+app.use((req, res, next) => {
+  res.locals.title_services = 'Services';
+  next();
+});
+
+app.use((req, res, next) => {
+  res.locals.title_about = 'About Me';
+  next();
+});
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
