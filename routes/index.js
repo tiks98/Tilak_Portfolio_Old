@@ -8,22 +8,22 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET contact page. */
-router.get('/', function(req, res, next) {
+router.get('/contact', function(req, res, next) {
   res.render('contact');
 });
 
 /* GET aboutme page. */
-router.get('/', function(req, res, next) {
+router.get('/about_me', function(req, res, next) {
   res.render('about_me');
 });
 
 /* GET projects page. */
-router.get('/', function(req, res, next) {
+router.get('/project', function(req, res, next) {
   res.render('projects');
 });
 
 /* GET services page. */
-router.get('/', function(req, res, next) {
+router.get('/services', function(req, res, next) {
   res.render('services');
 });
 
