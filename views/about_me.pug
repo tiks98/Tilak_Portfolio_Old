@@ -1,5 +1,8 @@
 extends layout
 
 block content
-  h1= title_about
-  p Welcome to #{title_about} page
+  .coverContainer
+    img.cover(src='/images/cover.jpg', alt='Cover Image')
+    .titleCentered   
+      h1= title_about
+      p Welcome to #{title_about} page

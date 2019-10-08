@@ -1,8 +1,35 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.coverContainer {
+  position: relative;
+}
+
+.titleCentered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+img.cover{
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }

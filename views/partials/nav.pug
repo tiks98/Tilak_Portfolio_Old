@@ -1,13 +1,13 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  a.navbar-brand(href='#') TS
+nav.navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-dark
+  a.navbar-brand(href='../')
+  img(src='/images/logo.jpg', width='30', height='30', alt='logo')
   button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
     span.navbar-toggler-icon
   #navbarSupportedContent.collapse.navbar-collapse
     ul.navbar-nav.mr-auto
-      li.nav-item.active
+      li.nav-item
         a.nav-link(href='../')
           | Home 
-          span.sr-only (current)
       li.nav-item
         a.nav-link(href='../about_me') About Me
       li.nav-item
@@ -16,6 +16,3 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='../services') Services
       li.nav-item
         a.nav-link(href='../contact') Contact Me
-    form.form-inline.my-2.my-lg-0
-      input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
-      button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
