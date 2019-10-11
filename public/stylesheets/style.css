@@ -8,6 +8,7 @@ a {
 
 .coverContainer {
   position: relative;
+  background-attachment: fixed;
 }
 
 .titleCentered {
@@ -17,14 +18,91 @@ a {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
+  -webkit-animation: titleAnimation 4s ; /* Safari 4.0 - 8.0 */
+  animation: titleAnimation 4s ;
 }
+
+@-webkit-keyframes titleAnimation {
+  from {top: 30%; left: 50%}
+  to {top: 40%; left: 50%}
+}
+
+@keyframes titleAnimation {
+  from {top: 30%; left: 50%}
+  to {top: 40%; left: 50%}
+}
+
+.titleCentered p{
+  font-size: 30px;
+}
+
+
 
 img.cover{
   width: 100%;
   height: auto;
 }
 
+input[type=text],[type=email], textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid rgb(182, 182, 182);
+  border-radius: 10px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  position: relative;
+  background-color: rgb(95, 74, 190);
+  color: white;
+  padding: 12px 20px;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #432ebb;
+}
+
+.formContainer {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.labelsForm {
+  float: left;
+  width: 25%;
+  margin-top: 7px;
+}
+
+.inputsForm {
+  float: left;
+  width: 75%;
+  margin-top: 7px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .labelsForm, .inputsForm, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .titleCentered{
+    padding-top: 25px;
+  }
+
+}
 
 footer {
     position: bottom;
@@ -32,4 +110,5 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+    background-color: lightgrey;
 }

@@ -15,7 +15,7 @@ app.set('view engine', 'pug');
 
 
 app.use((req, res, next) => {
-  res.locals.title_index = 'Home';
+  res.locals.title_index = 'Tilak Suthar';
   next();
 });
 
