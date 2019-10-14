@@ -1,3 +1,12 @@
+/*
+  File name: style.css
+  Author's name: Tilakbhai Suthar
+  Student Number: 200393400
+  Website name: https://tilaksuthar.herokuapp.com/
+  This is the main stylesheet with all the css of every page in the website.
+  With the different id's and classes it can be differntiated that which page and class or id the css is used.
+*/
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -6,12 +15,13 @@ a {
   color: #00B7FF;
 }
 
-.coverContainer {
+.coverContainer { /*Cover container for the every page having the cover image*/
   position: relative;
   background-attachment: fixed;
 }
 
-.titleCentered {
+/*postitioning the title in center*/
+.titleCentered {    
   position: absolute;
   top: 40%;
   left: 50%;
@@ -19,16 +29,18 @@ a {
   color: white;
   text-align: center;
   font-size: 50px;
-  -webkit-animation: titleAnimation 4s ; /*For Safari*/
-  animation: titleAnimation 4s ;
+  -webkit-animation: titleAnimation 4s ; /*Animation For Safari*/
+  animation: titleAnimation 4s ;    /*Animation for other browser*/
 }
 
-@-webkit-keyframes titleAnimation {
+/* animation keyframes for safari*/
+@-webkit-keyframes titleAnimation {   
   from {top: 30%; left: 50%}
   to {top: 40%; left: 50%}
 }
 
-@keyframes titleAnimation {
+/*Animation keyframes for the other browsers */
+@keyframes titleAnimation {   
   from {top: 30%; left: 50%}
   to {top: 40%; left: 50%}
 }
@@ -37,13 +49,12 @@ a {
   font-size: 30px;
 }
 
-
-
 img.cover{
   width: 100%;
   height: auto;
 }
 
+/*Second Cover image on the About Me page*/
 .aboutCover{
   position: relative;
   background-attachment: fixed;
@@ -51,6 +62,7 @@ img.cover{
   padding-top: 60px; 
 }
 
+/*Description on the About me page*/
 .aboutDescriptionContainer{
   position: absolute;
   top: 110px;
@@ -59,15 +71,17 @@ img.cover{
   font-size: 30px;
   color: white;
   font-style: italic;
-  -webkit-animation: descAnimation 5s ; /*For Safari*/
-  animation: descAnimation 5s ;
+  -webkit-animation: descAnimation 5s ;  /*Animation For Safari*/
+  animation: descAnimation 5s ;  /*Animation for other browser*/
 }
 
-@-webkit-keyframes descAnimation {
+/* animation keyframes for safari*/
+@-webkit-keyframes descAnimation {  
   from {left: 30px}
   to {left: 90px}
 }
 
+/*Animation keyframes for the other browsers */
 @keyframes descAnimation {
   from {left: 30px}
   to {left: 90px}
@@ -82,24 +96,26 @@ img.myCover {
   transition: transform .2s;
 }
 
+/*Hover property used for the About me cover image*/
 img.myCover:hover {
-  -webkit-transform: scale(1.1); /*For Safari*/
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+  transform: scale(1.1); /*Transform transition For Other browsers*/
 }
 
 .indexImage{
   margin-left: -50px;   
-  transition: transform .2s;
+  transition: transform .2s; /*Transform transition effect*/
 }
 
 .indexImage:hover{
-  -webkit-transform: scale(1.2); /*For Safari*/
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2); /*Transform transition For Safari*/
+  transform: scale(1.2); /*Transform transition For Other browsers*/
 }
 
 p#quote{
   text-align: center;
   padding-top: 10px;
+  padding-bottom: 40px; 
 }
 
 h2#index{
@@ -108,13 +124,14 @@ h2#index{
 }
 
 h2#quoteIndex{
-  padding-top: 20px; 
+  padding-top: 50px; 
   text-align: center;
 }
 
 h1.quote{
   text-align: center;
-  padding: 20px 20px;
+  padding: 40px 40px;
+  font-style: italic;
 }
 
 h1#project {
@@ -132,16 +149,20 @@ h2#services{
   padding-left: 30px; 
 }
 
+/*Index page about me description*/
 .aboutDescription{
   text-align: left;
 }
 
+/*Making the grid conatiner for the grid display*/
 .gridContainer {
-  display: grid;
+  display: grid;  /*Grid display for projects and services page*/
   grid-gap: 10px; 
   grid-template-columns: auto auto auto;
   padding-top: 50px; 
 }
+
+/*Items in the grid container*/
 .gridItems {
   font-size: 30px;
   text-align: center;
@@ -150,13 +171,13 @@ h2#services{
 }
 
 .projectImage:hover{
-  -webkit-transform: scale(1.1); /*For Safari*/
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+  transform: scale(1.1); /*Transform transition For Other browsers*/
 }
 
 .serviceImage:hover{
-  -webkit-transform: scale(1.1); /*For Safari*/
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+  transform: scale(1.1); /*Transform transition For Other browsers*/
 }
 
 .projectImage {
@@ -164,7 +185,7 @@ h2#services{
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.20);
   margin-bottom: 25px;
-  transition: transform .2s;
+  transition: transform .2s; /*Transform transition effect*/
 }
 
 .serviceImage{
@@ -172,7 +193,7 @@ h2#services{
   background-color: white;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.20);
   margin-bottom: 25px;
-  transition: transform .2s;
+  transition: transform .2s; /*Transform transition effect*/
 }
 
 .altContainer {
@@ -282,6 +303,7 @@ footer {
     position: bottom; 
     width: 100%;
     background-color: rgb(240, 234, 234);
+    padding-bottom: 80px;
 }
 
 footer .gridContainer{

@@ -1,3 +1,9 @@
+/*  File name: app.js
+    Author's name: Tilakbhai Suthar
+    Student Number: 200393400
+    Website name: https://tilaksuthar.herokuapp.com/
+    This is the app javascript file which is created by the express generator while creating the view templates for the website. This file is attached with the node js command prompt.
+*/
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -14,27 +20,27 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {               //res.locals using the input to display it on the required pages
   res.locals.title_index = 'Tilak Suthar';
   next();
 });
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {             //res.locals using the input to display it on the required pages
   res.locals.title_projects = 'Projects';
   next();
 });
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {           //res.locals using the input to display it on the required pages
   res.locals.title_contact = 'Contact';
   next();
 });
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {           //res.locals using the input to display it on the required pages
   res.locals.title_services = 'Services';
   next();
 });
 
-app.use((req, res, next) => {
+app.use((req, res, next) => {             //res.locals using the input to display it on the required pages
   res.locals.title_about = 'About Me';
   next();
 });
