@@ -11,7 +11,10 @@ block content
     img.cover(src='/images/cover.jpg', alt='Cover Image')
     .titleCentered  
       h1= title_projects
-      p Welcome to #{title_projects} page
+      if isLoggedIn
+        p Welcome to #{title_projects} page, #{user.username}
+      else
+        p Welcome to #{title_projects} page
   
   h1#project Here are some projects!
   .gridContainer

@@ -11,7 +11,10 @@ block content
     img.cover(src='/images/cover.jpg', alt='Cover Image')
     .titleCentered
       h1= title_services
-      p Welcome to #{title_services} page
+      if isLoggedIn
+        p Welcome to #{title_services} page, #{user.username}
+      else
+        p Welcome to #{title_services} page
 
   .servicesContainer
     h1#services Here are some services that I provide

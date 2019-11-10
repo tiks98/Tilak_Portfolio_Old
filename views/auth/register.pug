@@ -1,0 +1,26 @@
+//-	
+	File name: register.pug
+	Author's name: Tilakbhai Suthar
+	Student Number: 200393400
+	Website name: https://tilaksuthar.herokuapp.com/
+	This is the register pug file which is used for the registeration of user into the website. The file layout is extended from the layout.pug file.
+	References for the file: https://github.com/Naismith/comp2068-f2019-week09/blob/master/views/auth/register.pug
+
+extends ../layout
+
+block content
+	.coverContainer
+		img.cover(src='/images/cover.jpg', alt='Cover Image')
+		.titleCentered 
+			p Please Register Here!
+			p If you have already registered then go to Login Page.
+	.container
+		h1 Register Form
+		form(method="post")
+			.form-group
+				label Username
+				input.form-control(name="username")
+			.form-group
+				label Password
+				input.form-control(name="password")
+			button.btn.btn-primary Submit

@@ -1,27 +1,36 @@
 //-
-  File name: header.pug
-  Author's name: Tilakbhai Suthar
-  Student Number: 200393400
-  Website name: https://tilaksuthar.herokuapp.com/
-  This is the header pug file which I used to implement the pug file. It is only included once in the layout.pug file and all the pages have it on the top.
-  This code is taken from the bootstrap navbar page
-  Reference: https://getbootstrap.com/docs/4.3/components/navbar/
+	File name: header.pug
+	Author's name: Tilakbhai Suthar
+	Student Number: 200393400
+	Website name: https://tilaksuthar.herokuapp.com/
+	This is the header pug file which I used to implement the pug file. It is only included once in the layout.pug file and all the pages have it on the top.
+	This code is taken from the bootstrap navbar page
+	Reference: https://getbootstrap.com/docs/4.3/components/navbar/
 
 nav.navbar.sticky-top.navbar-expand-lg.navbar-dark.bg-dark 
-  a.navbar-brand(href='../')
-    img(src='/images/logo1.jpg', width='50', height='30', alt='logo')
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
-      li.nav-item
-        a.nav-link(href='../')
-          | Home 
-      li.nav-item
-        a.nav-link(href='../about_me') About Me
-      li.nav-item
-        a.nav-link(href='../project') Projects
-      li.nav-item
-        a.nav-link(href='../services') Services
-      li.nav-item
-        a.nav-link(href='../contact') Contact Me
+	a.navbar-brand(href='../')
+		img(src='/images/logo1.jpg', width='50', height='30', alt='logo')
+	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+		span.navbar-toggler-icon
+	#navbarSupportedContent.collapse.navbar-collapse
+		ul.navbar-nav.mr-auto
+			li.nav-item
+				a.nav-link(href='../')
+					| Home 
+			li.nav-item
+				a.nav-link(href='../about_me') About Me
+			li.nav-item
+				a.nav-link(href='../project') Projects
+			li.nav-item
+				a.nav-link(href='../services') Services
+			li.nav-item
+				a.nav-link(href='../contact') Contact Me
+		ul.navbar-nav
+			if isLoggedIn
+				li.nav-item
+					a.nav-link(href='/logout') Logout
+			else
+				li.nav-item
+					a.nav-link(href='/login') Login
+				li.nav-item
+					a.nav-link(href='/register') Register

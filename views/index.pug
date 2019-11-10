@@ -23,6 +23,8 @@ block content
     .titleCentered 
       h1= title_index
       p Web Designer & Developer
+      if isLoggedIn
+        p Welcome to the site, #{user.username}
 
   h2#index A little bit about me!
   .gridContainer
