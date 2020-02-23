@@ -13,16 +13,17 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
 }
 
-.coverContainer { /*Cover container for the every page having the cover image*/
+.coverContainer {
+  /*Cover container for the every page having the cover image*/
   position: relative;
   background-attachment: fixed;
 }
 
 /*postitioning the title in center*/
-.titleCentered {    
+.titleCentered {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -30,41 +31,53 @@ a {
   color: white;
   text-align: center;
   font-size: 50px;
-  -webkit-animation: titleAnimation 4s ; /*Animation For Safari*/
-  animation: titleAnimation 4s ;    /*Animation for other browser*/
+  -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
+  animation: titleAnimation 4s; /*Animation for other browser*/
 }
 
 /* animation keyframes for safari*/
-@-webkit-keyframes titleAnimation {   
-  from {top: 30%; left: 50%}
-  to {top: 40%; left: 50%}
+@-webkit-keyframes titleAnimation {
+  from {
+    top: 30%;
+    left: 50%;
+  }
+  to {
+    top: 40%;
+    left: 50%;
+  }
 }
 
 /*Animation keyframes for the other browsers */
-@keyframes titleAnimation {   
-  from {top: 30%; left: 50%}
-  to {top: 40%; left: 50%}
+@keyframes titleAnimation {
+  from {
+    top: 30%;
+    left: 50%;
+  }
+  to {
+    top: 40%;
+    left: 50%;
+  }
 }
 
-.titleCentered p{
+.titleCentered p {
   font-size: 30px;
 }
 
-img.cover{
+img.cover {
   width: 100%;
   height: auto;
 }
 
 /*Second Cover image on the About Me page*/
-.aboutCover{
+.aboutCover {
   position: relative;
   background-attachment: fixed;
   padding: 50px;
-  padding-top: 60px; 
+  padding-top: 60px;
 }
 
 /*Description on the About me page*/
-.aboutDescriptionContainer{
+.aboutDescriptionContainer {
   position: absolute;
   top: 110px;
   left: 90px;
@@ -72,20 +85,28 @@ img.cover{
   font-size: 30px;
   color: white;
   font-style: italic;
-  -webkit-animation: descAnimation 5s ;  /*Animation For Safari*/
-  animation: descAnimation 5s ;  /*Animation for other browser*/
+  -webkit-animation: descAnimation 5s; /*Animation For Safari*/
+  animation: descAnimation 5s; /*Animation for other browser*/
 }
 
 /* animation keyframes for safari*/
-@-webkit-keyframes descAnimation {  
-  from {left: 30px}
-  to {left: 90px}
+@-webkit-keyframes descAnimation {
+  from {
+    left: 30px;
+  }
+  to {
+    left: 90px;
+  }
 }
 
 /*Animation keyframes for the other browsers */
 @keyframes descAnimation {
-  from {left: 30px}
-  to {left: 90px}
+  from {
+    left: 30px;
+  }
+  to {
+    left: 90px;
+  }
 }
 
 img.myCover {
@@ -94,7 +115,7 @@ img.myCover {
   border-radius: 1%;
   border: 1px solid;
   box-shadow: 2px 10px 8px 10px #9b9999;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 /*Hover property used for the About me cover image*/
@@ -103,33 +124,33 @@ img.myCover:hover {
   transform: scale(1.1); /*Transform transition For Other browsers*/
 }
 
-.indexImage{
-  margin-left: -50px;   
-  transition: transform .2s; /*Transform transition effect*/
+.indexImage {
+  margin-left: -50px;
+  transition: transform 0.2s; /*Transform transition effect*/
 }
 
-.indexImage:hover{
+.indexImage:hover {
   -webkit-transform: scale(1.2); /*Transform transition For Safari*/
   transform: scale(1.2); /*Transform transition For Other browsers*/
 }
 
-p#quote{
+p#quote {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 40px; 
+  padding-bottom: 40px;
 }
 
-h2#index{
+h2#index {
   padding-top: 40px;
-  padding-left: 20px;  
+  padding-left: 20px;
 }
 
-h2#quoteIndex{
-  padding-top: 50px; 
+h2#quoteIndex {
+  padding-top: 50px;
   text-align: center;
 }
 
-h1.quote{
+h1.quote {
   text-align: center;
   padding: 40px 40px;
   font-style: italic;
@@ -137,30 +158,30 @@ h1.quote{
 
 h1#project {
   text-align: center;
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
-h1#services{
+h1#services {
   text-align: center;
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
-h2#services{
-  padding-top: 40px; 
-  padding-left: 30px; 
+h2#services {
+  padding-top: 40px;
+  padding-left: 30px;
 }
 
 /*Index page about me description*/
-.aboutDescription{
+.aboutDescription {
   text-align: left;
 }
 
 /*Making the grid conatiner for the grid display*/
 .gridContainer {
-  display: grid;  /*Grid display for projects and services page*/
-  grid-gap: 10px; 
+  display: grid; /*Grid display for projects and services page*/
+  grid-gap: 10px;
   grid-template-columns: auto auto auto;
-  padding-top: 50px; 
+  padding-top: 50px;
 }
 
 /*Items in the grid container*/
@@ -168,15 +189,15 @@ h2#services{
   font-size: 30px;
   text-align: center;
   align-content: center;
-  padding-left: 50px; 
+  padding-left: 50px;
 }
 
-.projectImage:hover{
+.projectImage:hover {
   -webkit-transform: scale(1.1); /*Transform transition For Safari*/
   transform: scale(1.1); /*Transform transition For Other browsers*/
 }
 
-.serviceImage:hover{
+.serviceImage:hover {
   -webkit-transform: scale(1.1); /*Transform transition For Safari*/
   transform: scale(1.1); /*Transform transition For Other browsers*/
 }
@@ -184,17 +205,17 @@ h2#services{
 .projectImage {
   width: 80%;
   background-color: white;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
-  transition: transform .2s; /*Transform transition effect*/
+  transition: transform 0.2s; /*Transform transition effect*/
 }
 
-.serviceImage{
+.serviceImage {
   max-width: 70%;
   background-color: white;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 25px;
-  transition: transform .2s; /*Transform transition effect*/
+  transition: transform 0.2s; /*Transform transition effect*/
 }
 
 .altContainer {
@@ -203,11 +224,13 @@ h2#services{
   font-size: 25px;
 }
 
-.serviceDescription{
+.serviceDescription {
   text-align: left;
 }
 
-input[type=text],[type=email], textarea {
+input[type="text"],
+[type="email"],
+textarea {
   width: 100%;
   padding: 15px;
   border: 2px solid rgb(182, 182, 182);
@@ -220,7 +243,7 @@ label {
   font-size: 20px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   position: relative;
   background-color: rgb(95, 74, 190);
   color: white;
@@ -228,7 +251,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #432ebb;
 }
 
@@ -255,68 +278,739 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .labelsForm, .inputsForm, input[type=submit] {
+@media only screen and (max-width: 600px) {
+  .labelsForm,
+  .inputsForm,
+  input[type="submit"] {
     width: 100%;
     margin-top: 0;
   }
 
-  .titleCentered{
+  .titleCentered {
     padding-top: 25px;
   }
 
-  .aboutDescriptionContainer{
+  .aboutDescriptionContainer {
     position: relative;
     font-size: 20px;
     color: black;
     width: 100%;
     top: 40px;
     left: 20px;
-    -webkit-animation: descAnimation 5s ; /*For Safari*/
-    animation: descAnimation 5s ;
+    -webkit-animation: descAnimation 5s; /*For Safari*/
+    animation: descAnimation 5s;
   }
 
   @-webkit-keyframes descAnimation {
-    from {left: 0px}
-    to {left: 20px}
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
   }
 
   @keyframes descAnimation {
-    from {left: 0px}
-    to {left: 20px}
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
   }
 
-  .gridContainer, .gridItems, .projectImage, .serviceImage, .altContainer{
+  .gridContainer,
+  .gridItems,
+  .projectImage,
+  .serviceImage,
+  .altContainer {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
   }
 
-  h4#footer, p#contact, h6#email, a#email, p#copyright{
+  h4#footer,
+  p#contact,
+  h6#email,
+  a#email,
+  p#copyright {
     display: grid;
     grid-template-columns: auto;
-    margin-top: 10px; 
+    margin-top: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .labelsForm,
+  .inputsForm,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
 
+  .titleCentered {
+    padding-top: 25px;
+  }
+
+  .aboutDescriptionContainer {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    top: 40px;
+    left: 20px;
+    -webkit-animation: descAnimation 5s; /*For Safari*/
+    animation: descAnimation 5s;
+  }
+
+  @-webkit-keyframes descAnimation {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
+  }
+
+  @keyframes descAnimation {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
+  }
+
+  .gridContainer,
+  .gridItems,
+  .projectImage,
+  .serviceImage,
+  .altContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+  }
+
+  h4#footer,
+  p#contact,
+  h6#email,
+  a#email,
+  p#copyright {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .labelsForm,
+  .inputsForm,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .titleCentered {
+    padding-top: 25px;
+  }
+
+  .aboutDescriptionContainer {
+    position: relative;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    top: 40px;
+    left: 20px;
+    -webkit-animation: descAnimation 5s; /*For Safari*/
+    animation: descAnimation 5s;
+  }
+
+  @-webkit-keyframes descAnimation {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
+  }
+
+  @keyframes descAnimation {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 20px;
+    }
+  }
+
+  .gridContainer,
+  .gridItems,
+  .projectImage,
+  .serviceImage,
+  .altContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+  }
+
+  h4#footer,
+  p#contact,
+  h6#email,
+  a#email,
+  p#copyright {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .coverContainer {
+    /*Cover container for the every page having the cover image*/
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  /*postitioning the title in center*/
+  .titleCentered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
+    animation: titleAnimation 4s; /*Animation for other browser*/
+  }
+
+  /* animation keyframes for safari*/
+  @-webkit-keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  .titleCentered p {
+    font-size: 30px;
+  }
+
+  img.cover {
+    width: 100%;
+    height: auto;
+  }
+
+  /*Second Cover image on the About Me page*/
+  .aboutCover {
+    position: relative;
+    background-attachment: fixed;
+    padding: 50px;
+    padding-top: 60px;
+  }
+
+  /*Description on the About me page*/
+  .aboutDescriptionContainer {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    width: 35%;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    -webkit-animation: descAnimation 5s; /*Animation For Safari*/
+    animation: descAnimation 5s; /*Animation for other browser*/
+  }
+
+  /* animation keyframes for safari*/
+  @-webkit-keyframes descAnimation {
+    from {
+      left: 30px;
+    }
+    to {
+      left: 90px;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes descAnimation {
+    from {
+      left: 30px;
+    }
+    to {
+      left: 90px;
+    }
+  }
+
+  img.myCover {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+    border: 1px solid;
+    box-shadow: 2px 10px 8px 10px #9b9999;
+    transition: transform 0.2s;
+  }
+
+  /*Hover property used for the About me cover image*/
+  img.myCover:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .indexImage {
+    margin-left: -50px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .indexImage:hover {
+    -webkit-transform: scale(1.2); /*Transform transition For Safari*/
+    transform: scale(1.2); /*Transform transition For Other browsers*/
+  }
+
+  p#quote {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  h2#index {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  h2#quoteIndex {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  h1.quote {
+    text-align: center;
+    padding: 40px 40px;
+    font-style: italic;
+  }
+
+  h1#project {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h1#services {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h2#services {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  /*Index page about me description*/
+  .aboutDescription {
+    text-align: left;
+  }
+
+  /*Making the grid conatiner for the grid display*/
+  .gridContainer {
+    display: grid; /*Grid display for projects and services page*/
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+  }
+
+  /*Items in the grid container*/
+  .gridItems {
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    padding-left: 50px;
+  }
+
+  .projectImage:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .serviceImage:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .projectImage {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .serviceImage {
+    max-width: 70%;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .altContainer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 25px;
+  }
+
+  .serviceDescription {
+    text-align: left;
+  }
+
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    position: relative;
+    background-color: rgb(95, 74, 190);
+    color: white;
+    padding: 12px 20px;
+    float: right;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #432ebb;
+  }
+
+  .formContainer {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .labelsForm {
+    float: left;
+    width: 25%;
+    margin-top: 7px;
+  }
+
+  .inputsForm {
+    float: left;
+    width: 75%;
+    margin-top: 7px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    clear: both;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .coverContainer {
+    /*Cover container for the every page having the cover image*/
+    position: relative;
+    background-attachment: fixed;
+  }
+
+  /*postitioning the title in center*/
+  .titleCentered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
+    animation: titleAnimation 4s; /*Animation for other browser*/
+  }
+
+  /* animation keyframes for safari*/
+  @-webkit-keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  .titleCentered p {
+    font-size: 30px;
+  }
+
+  img.cover {
+    width: 100%;
+    height: auto;
+  }
+
+  /*Second Cover image on the About Me page*/
+  .aboutCover {
+    position: relative;
+    background-attachment: fixed;
+    padding: 50px;
+    padding-top: 60px;
+  }
+
+  /*Description on the About me page*/
+  .aboutDescriptionContainer {
+    position: absolute;
+    top: 110px;
+    left: 90px;
+    width: 35%;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+    -webkit-animation: descAnimation 5s; /*Animation For Safari*/
+    animation: descAnimation 5s; /*Animation for other browser*/
+  }
+
+  /* animation keyframes for safari*/
+  @-webkit-keyframes descAnimation {
+    from {
+      left: 30px;
+    }
+    to {
+      left: 90px;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes descAnimation {
+    from {
+      left: 30px;
+    }
+    to {
+      left: 90px;
+    }
+  }
+
+  img.myCover {
+    width: 100%;
+    height: auto;
+    border-radius: 1%;
+    border: 1px solid;
+    box-shadow: 2px 10px 8px 10px #9b9999;
+    transition: transform 0.2s;
+  }
+
+  /*Hover property used for the About me cover image*/
+  img.myCover:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .indexImage {
+    margin-left: -50px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .indexImage:hover {
+    -webkit-transform: scale(1.2); /*Transform transition For Safari*/
+    transform: scale(1.2); /*Transform transition For Other browsers*/
+  }
+
+  p#quote {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+
+  h2#index {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  h2#quoteIndex {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  h1.quote {
+    text-align: center;
+    padding: 40px 40px;
+    font-style: italic;
+  }
+
+  h1#project {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h1#services {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  h2#services {
+    padding-top: 40px;
+    padding-left: 30px;
+  }
+
+  /*Index page about me description*/
+  .aboutDescription {
+    text-align: left;
+  }
+
+  /*Making the grid conatiner for the grid display*/
+  .gridContainer {
+    display: grid; /*Grid display for projects and services page*/
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding-top: 50px;
+  }
+
+  /*Items in the grid container*/
+  .gridItems {
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    padding-left: 50px;
+  }
+
+  .projectImage:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .serviceImage:hover {
+    -webkit-transform: scale(1.1); /*Transform transition For Safari*/
+    transform: scale(1.1); /*Transform transition For Other browsers*/
+  }
+
+  .projectImage {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .serviceImage {
+    max-width: 70%;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+    transition: transform 0.2s; /*Transform transition effect*/
+  }
+
+  .altContainer {
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 25px;
+  }
+
+  .serviceDescription {
+    text-align: left;
+  }
+
+  input[type="text"],
+  [type="email"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    resize: vertical;
+  }
+
+  label {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  input[type="submit"] {
+    position: relative;
+    background-color: rgb(95, 74, 190);
+    color: white;
+    padding: 12px 20px;
+    float: right;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #432ebb;
+  }
+
+  .formContainer {
+    background-color: #ffffff;
+    padding: 20px;
+  }
+
+  .labelsForm {
+    float: left;
+    width: 25%;
+    margin-top: 7px;
+  }
+
+  .inputsForm {
+    float: left;
+    width: 75%;
+    margin-top: 7px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    clear: both;
+  }
 }
 
 footer {
-    position: bottom; 
-    width: 100%;
-    background-color: rgb(240, 234, 234);
-    padding-bottom: 80px;
+  position: bottom;
+  width: 100%;
+  background-color: rgb(240, 234, 234);
+  padding-bottom: 80px;
 }
 
-footer .gridContainer{
-  margin-left: -60px; 
+footer .gridContainer {
+  margin-left: -60px;
 }
 
-p#copyright, p#contact{
-  font-size: 20px; 
+p#copyright,
+p#contact {
+  font-size: 20px;
 }
 
-
-h6#email, a#email{
-  font-size: 20px; 
+h6#email,
+a#email {
+  font-size: 20px;
 }
-
