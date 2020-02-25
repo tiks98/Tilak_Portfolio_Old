@@ -22,46 +22,9 @@ a {
   background-attachment: fixed;
 }
 
-/*postitioning the title in center*/
-.titleCentered {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  font-size: 50px;
-  -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
-  animation: titleAnimation 4s; /*Animation for other browser*/
-}
-
-/* animation keyframes for safari*/
-@-webkit-keyframes titleAnimation {
-  from {
-    top: 30%;
-    left: 50%;
-  }
-  to {
-    top: 40%;
-    left: 50%;
-  }
-}
-
-/*Animation keyframes for the other browsers */
-@keyframes titleAnimation {
-  from {
-    top: 30%;
-    left: 50%;
-  }
-  to {
-    top: 40%;
-    left: 50%;
-  }
-}
-
-.titleCentered p {
+/* .titleCentered p {
   font-size: 30px;
-}
+} */
 
 img.cover {
   width: 100%;
@@ -87,26 +50,6 @@ img.cover {
   font-style: italic;
   -webkit-animation: descAnimation 5s; /*Animation For Safari*/
   animation: descAnimation 5s; /*Animation for other browser*/
-}
-
-/* animation keyframes for safari*/
-@-webkit-keyframes descAnimation {
-  from {
-    left: 30px;
-  }
-  to {
-    left: 90px;
-  }
-}
-
-/*Animation keyframes for the other browsers */
-@keyframes descAnimation {
-  from {
-    left: 30px;
-  }
-  to {
-    left: 90px;
-  }
 }
 
 img.myCover {
@@ -287,7 +230,38 @@ input[type="submit"]:hover {
   }
 
   .titleCentered {
-    padding-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
+    animation: titleAnimation 4s; /*Animation for other browser*/
+  }
+
+  @-webkit-keyframes titleAnimation {
+    from {
+      top: 40%;
+      left: 50%;
+    }
+    to {
+      top: 50%;
+      left: 50%;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes titleAnimation {
+    from {
+      top: 40%;
+      left: 50%;
+    }
+    to {
+      top: 50%;
+      left: 50%;
+    }
   }
 
   .aboutDescriptionContainer {
@@ -299,24 +273,6 @@ input[type="submit"]:hover {
     left: 20px;
     -webkit-animation: descAnimation 5s; /*For Safari*/
     animation: descAnimation 5s;
-  }
-
-  @-webkit-keyframes descAnimation {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 20px;
-    }
-  }
-
-  @keyframes descAnimation {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 20px;
-    }
   }
 
   .gridContainer,
@@ -350,7 +306,38 @@ input[type="submit"]:hover {
   }
 
   .titleCentered {
-    padding-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    -webkit-animation: titleAnimation 4s; /*Animation For Safari*/
+    animation: titleAnimation 4s; /*Animation for other browser*/
+  }
+
+  @-webkit-keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
+  }
+
+  /*Animation keyframes for the other browsers */
+  @keyframes titleAnimation {
+    from {
+      top: 30%;
+      left: 50%;
+    }
+    to {
+      top: 40%;
+      left: 50%;
+    }
   }
 
   .aboutDescriptionContainer {
@@ -362,24 +349,6 @@ input[type="submit"]:hover {
     left: 20px;
     -webkit-animation: descAnimation 5s; /*For Safari*/
     animation: descAnimation 5s;
-  }
-
-  @-webkit-keyframes descAnimation {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 20px;
-    }
-  }
-
-  @keyframes descAnimation {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 20px;
-    }
   }
 
   .gridContainer,
