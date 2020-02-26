@@ -1,60 +1,62 @@
 //-
-  File name: index.pug
-  Author's name: Tilakbhai Suthar
-  Student Number: 200393400
-  Website name: https://tilaksuthar.herokuapp.com/
-  This is the index pug file which is also the home page of the website. The file layout is extended from the layout.pug file.
-  Refernces for the images: https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/98616097/original/cd88ef0c0011b49dd47958a3409ed1426c17e17b/do-anything-with-html5-css3-javascript-jquery.png
+	File name: index.pug
+	Author's name: Tilakbhai Suthar
+	Student Number: 200393400
+	Website name: https://tilaksuthar.herokuapp.com/
+	This is the index pug file which is also the home page of the website. The file layout is extended from the layout.pug file.
+	Refernces for the images: https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/98616097/original/cd88ef0c0011b49dd47958a3409ed1426c17e17b/do-anything-with-html5-css3-javascript-jquery.png
 
-  https://pixabay.com/photos/apple-iphone-mobile-phone-notebook-1841553/
+	https://pixabay.com/photos/apple-iphone-mobile-phone-notebook-1841553/
 
-  https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png
+	https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/711px-PHP-logo.svg.png
 
-  https://miro.medium.com/max/1200/1*m5RYM_Wkj4LsZewpigV5tg.jpeg
+	https://miro.medium.com/max/1200/1*m5RYM_Wkj4LsZewpigV5tg.jpeg
 
-  https://miro.medium.com/max/365/1*d2zLEjERsrs1Rzk_95QU9A.png
+	https://miro.medium.com/max/365/1*d2zLEjERsrs1Rzk_95QU9A.png
 
-  https://d1.awsstatic.com/logos/partners/microsoft/logo-SQLServer-vert.c0cb0df0cd1d6c8469d792abb5929239da36611a.png
+	https://d1.awsstatic.com/logos/partners/microsoft/logo-SQLServer-vert.c0cb0df0cd1d6c8469d792abb5929239da36611a.png
 extends layout
 
 block content
-  .coverContainer
-    img.cover(src='/images/cover.jpg', alt='Cover Image')
-    .titleCentered 
-      h1= title_index
-      p Web Designer & Developer
-      if isLoggedIn
-        p Welcome to the site, #{user.username}
+	.coverContainer
+		video#myVideo(autoplay='', muted='', loop='')
+			source(src='/video/Plexus.mp4', type='video/mp4')
+		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
+		.titleCentered 
+			h1= title_index
+			p Web Designer & Developer
+			if isLoggedIn
+				p Welcome to the site, #{user.username}
 
-  h2#index A little bit about me!
-  .gridContainer
-    .gridItems 
-      .indexImage
-        img(src='/images/aboutCover.jpg', alt='About Me', style='width:80%')
-    .gridItems
-      .aboutDescription
-        p Hi, My name is Tilak Suthar and I’m a Computer Programmer, I like to program HTML, CSS, JavaScript, Java, ASP.NET and z/OS. I’m good at making web pages dynamic and intuitive, I have administrated databases with MySQL and SQLSERVER during my college studies.
-  h2#index My Projects
-  .gridContainer
-    .gridItems
-      .projectImage
-        a(target='_blank', href='http://surveyuniversal.herokuapp.com/')  
-          img(src='/images/UniSurvey.png', alt='Universal Survey', style='width:100%')
-          .altContainer
-            p Survey website using MERN Stack
-    .gridItems
-      .projectImage
-        a(target='_blank', href='https://newfurniturestore20190812032157.azurewebsites.net/')
-          img(src='/images/Furnyish.jpg', alt='Furnyish Store', style='width:100%')
-          .altContainer
-            p Furnyish Store website using ASP.NET
-    .gridItems
-      .projectImage
-        a(target='_blank', href='https://github.com/tiks98/Weird-Deals-Project')  
-          img(src='/images/weirdDeals.png', alt='Weird Deals', style='width:100%')
-          .altContainer
-            p Weird Deals using JSON
-  h2#quoteIndex Quotes
-  h1.quote I have no special talent. I am only passionately curious.
-  p#quote Albert Einstien
+	h2#index A little bit about me!
+	.gridContainer
+		.gridItems 
+			.indexImage
+				img(src='/images/aboutCover.jpg', alt='About Me', style='width:80%')
+		.gridItems
+			.aboutDescription
+				p Hi, My name is Tilak Suthar and I’m a Computer Programmer, I like to program HTML, CSS, JavaScript, Java, ASP.NET and z/OS. I’m good at making web pages dynamic and intuitive, I have administrated databases with MySQL and SQLSERVER during my college studies.
+	h2#index My Projects
+	.gridContainer
+		.gridItems
+			.projectImage
+				a(target='_blank', href='http://surveyuniversal.herokuapp.com/')  
+					img(src='/images/UniSurvey.png', alt='Universal Survey', style='width:100%')
+					.altContainer
+						p Survey website using MERN Stack
+		.gridItems
+			.projectImage
+				a(target='_blank', href='https://newfurniturestore20190812032157.azurewebsites.net/')
+					img(src='/images/Furnyish.jpg', alt='Furnyish Store', style='width:100%')
+					.altContainer
+						p Furnyish Store website using ASP.NET
+		.gridItems
+			.projectImage
+				a(target='_blank', href='https://github.com/tiks98/Weird-Deals-Project')  
+					img(src='/images/weirdDeals.png', alt='Weird Deals', style='width:100%')
+					.altContainer
+						p Weird Deals using JSON
+	h2#quoteIndex Quotes
+	h1.quote I have no special talent. I am only passionately curious.
+	p#quote Albert Einstien
 

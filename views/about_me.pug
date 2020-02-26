@@ -1,22 +1,26 @@
 //-
-  File name: about_me.pug
-  Author's name: Tilakbhai Suthar
-  Student Number: 200393400
-  Website name: https://tilaksuthar.herokuapp.com/
-  This is the About me pug file which is about me page of the website. It is extending from the layout.pug file. This page includes the cover image and paragraph about my self.
+	File name: about_me.pug
+	Author's name: Tilakbhai Suthar
+	Student Number: 200393400
+	Website name: https://tilaksuthar.herokuapp.com/
+	This is the About me pug file which is about me page of the website. It is extending from the layout.pug file. This page includes the cover image and paragraph about my self.
 extends layout
 
 block content
-  .coverContainer
-    img.cover(src='/images/cover.jpg', alt='Cover Image')
-    .titleCentered   
-      h1= title_about
-      if isLoggedIn
-        p Welcome to #{title_about} page, #{user.username}
-      else
-        p Welcome to #{title_about} page
+	.coverContainer
+		video#myVideo(autoplay='', muted='', loop='')
+			source(src='/video/NightNew.mp4', type='video/mp4')
+		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
+		.titleCentered   
+			h1= title_about
+			if isLoggedIn
+				p Welcome to #{title_about} page, #{user.username}
+			else
+				p Welcome to #{title_about} page
 
-  .aboutCover
-    img.myCover(src='/images/aboutCover.jpg', alt='MyCoverImage',)
-    .aboutDescriptionContainer
-      p Hi, I’m Tilak Suthar and I’m a Computer Programmer, I like to program HTML, CSS, JavaScript, Java, ASP.NET and z/OS. I’m good at making web pages dynamic and intuitive, I have Administered Database with MySQL and SQLSERVER during my college studies. I have Worked With Netech Cabling Inc. to install and Maintain Various Operating Systems on different types of computers and also for maintenance of the various networking devices. Lastly, I earned Master the Mainframe – 2018 Global Championship identifications for effectively finishing Part 2 within deadline (this present reality challenge).
+	.aboutCover
+		video#myVideo(autoplay='', muted='', loop='')
+			source(src='/video/Drone.mp4', type='video/mp4')
+		//- img.myCover(src='/images/aboutCover.jpg', alt='MyCoverImage',)
+		.aboutDescriptionContainer
+			p Hi, I’m Tilak Suthar and I’m a Computer Programmer, I like to program HTML, CSS, JavaScript, Java, ASP.NET and z/OS. I’m good at making web pages dynamic and intuitive, I have Administered Database with MySQL and SQLSERVER during my college studies. I have Worked With Netech Cabling Inc. to install and Maintain Various Operating Systems on different types of computers and also for maintenance of the various networking devices. Lastly, I earned Master the Mainframe – 2018 Global Championship identifications for effectively finishing Part 2 within deadline (this present reality challenge).

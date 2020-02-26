@@ -1,44 +1,46 @@
 //-
-  File name: contact.pug
-  Author's name: Tilakbhai Suthar
-  Student Number: 200393400
-  Website name: https://tilaksuthar.herokuapp.com/
-  This is the contact pug file which is used to take contact details from the website. The page is extending from the layout.pug file.
-  This page mainly contains the form and a submit button.
+	File name: contact.pug
+	Author's name: Tilakbhai Suthar
+	Student Number: 200393400
+	Website name: https://tilaksuthar.herokuapp.com/
+	This is the contact pug file which is used to take contact details from the website. The page is extending from the layout.pug file.
+	This page mainly contains the form and a submit button.
 extends layout
 
 block content
-  .coverContainer
-    img.cover(src='/images/cover.jpg', alt='Cover Image')
-    .titleCentered
-      h1= title_contact
-      if isLoggedIn
-        p Welcome to #{title_contact} page, #{user.username}
-      else
-        p Welcome to #{title_contact} page
+	.coverContainer
+		video#myVideo(autoplay='', muted='', loop='')
+			source(src='/video/Plexus.mp4', type='video/mp4')
+		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
+		.titleCentered
+			h1= title_contact
+			if isLoggedIn
+				p Welcome to #{title_contact} page, #{user.username}
+			else
+				p Welcome to #{title_contact} page
 
-  form
-    .formContainer
-      form
-        .row
-          .labelsForm
-            label(for='fname') First Name
-          .inputsForm
-            input#fname(type='text', name='firstname', placeholder='Please enter your first Name')
-        .row
-          .labelsForm
-            label(for='lname') Last Name
-          .inputsForm
-            input#lname(type='text', name='lastname', placeholder='Please enter your last name')
-        .row
-          .labelsForm
-            label(for='email') Email
-          .inputsForm
-            input#email(type='email', name='Email', placeholder='Please enter email address')
-        .row
-          .labelsForm
-            label(for='subject') Subject
-          .inputsForm
-            textarea#subject(name='subject', placeholder='Write something here..', style='height:200px')
-        .row
-          input(type='submit', value='Submit')
+	form
+		.formContainer
+			form
+				.row
+					.labelsForm
+						label(for='fname') First Name
+					.inputsForm
+						input#fname(type='text', name='firstname', placeholder='Please enter your first Name')
+				.row
+					.labelsForm
+						label(for='lname') Last Name
+					.inputsForm
+						input#lname(type='text', name='lastname', placeholder='Please enter your last name')
+				.row
+					.labelsForm
+						label(for='email') Email
+					.inputsForm
+						input#email(type='email', name='Email', placeholder='Please enter email address')
+				.row
+					.labelsForm
+						label(for='subject') Subject
+					.inputsForm
+						textarea#subject(name='subject', placeholder='Write something here..', style='height:200px')
+				.row
+					input(type='submit', value='Submit')
