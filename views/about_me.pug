@@ -8,7 +8,7 @@ extends layout
 
 block content
 	.coverContainer
-		video#myVideo(autoplay='', muted='', loop='')
+		video#myVideo(autoplay='', muted='', loop='', playsinline='')
 			source(src='/video/NightNew.mp4', type='video/mp4')
 		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
 		.titleCentered   
@@ -19,7 +19,7 @@ block content
 				p Welcome to #{title_about} page
 
 	.aboutCover
-		video#myVideo(autoplay='', muted='', loop='')
+		video#about(autoplay='', muted='', loop='', playsinline='')
 			source(src='/video/Drone.mp4', type='video/mp4')
 		//- img.myCover(src='/images/aboutCover.jpg', alt='MyCoverImage',)
 		.aboutDescriptionContainer

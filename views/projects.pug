@@ -8,8 +8,8 @@ extends layout
 
 block content
 	.coverContainer
-		video#myVideo(autoplay='', muted='', loop='')
-			source(src='/video/Computer.mp4', type='video/mp4')
+		video#myVideo(autoplay='', muted='', loop='', playsinline='')
+			source(src='/video/Code.mp4', type='video/mp4')
 		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
 		.titleCentered  
 			h1= title_projects

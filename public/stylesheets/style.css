@@ -8,12 +8,65 @@
   Reference: https://www.w3schools.com/css/default.asp 
 */
 
+html {
+  overflow-x: hidden;
+}
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00b7ff;
+}
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #555;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #555;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #fff;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #555;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #fff;
+  }
 }
 
 /* Clear floats after the columns */
@@ -84,6 +137,7 @@ a {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
+    margin-left: 15px;
   }
 
   h4#footer,
@@ -94,6 +148,8 @@ a {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
   }
 
   .coverContainer {
@@ -110,6 +166,11 @@ a {
     padding-top: 60px;
   }
 
+  video#about {
+    width: 100%;
+    height: auto;
+  }
+
   p#quote {
     text-align: center;
     padding-top: 10px;
@@ -117,8 +178,9 @@ a {
   }
 
   h2#index {
-    padding-top: 40px;
-    padding-left: 20px;
+    /* padding-top: 40px;
+    padding-left: 20px; */
+    text-align: center;
   }
 
   h2#quoteIndex {
@@ -195,20 +257,6 @@ a {
     width: 100%;
     background-color: rgb(240, 234, 234);
     padding-bottom: 80px;
-  }
-
-  footer .gridContainer {
-    margin-left: -60px;
-  }
-
-  p#copyright,
-  p#contact {
-    font-size: 20px;
-  }
-
-  h6#email,
-  a#email {
-    font-size: 20px;
   }
 }
 

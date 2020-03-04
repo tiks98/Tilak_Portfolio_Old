@@ -10,7 +10,9 @@ extends ../layout
 
 block content
 	.coverContainer
-		img.cover(src='/images/cover.jpg', alt='Cover Image')
+		video#myVideo(autoplay='', muted='', loop='', playsinline='')
+			source(src='/video/Plexus.mp4', type='video/mp4')
+		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
 		.titleCentered 
 			p Please Register Here!
 			p If you have already registered then go to Login Page.

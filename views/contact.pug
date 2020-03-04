@@ -9,7 +9,7 @@ extends layout
 
 block content
 	.coverContainer
-		video#myVideo(autoplay='', muted='', loop='')
+		video#myVideo(autoplay='', muted='', loop='', playsinline='')
 			source(src='/video/Plexus.mp4', type='video/mp4')
 		//- img.cover(src='/images/cover.jpg', alt='Cover Image')
 		.titleCentered
@@ -26,21 +26,21 @@ block content
 					.labelsForm
 						label(for='fname') First Name
 					.inputsForm
-						input#fname(type='text', name='firstname', placeholder='Please enter your first Name')
+						input.form-control(type='text', name='firstname', placeholder='Please enter your first Name')
 				.row
 					.labelsForm
 						label(for='lname') Last Name
 					.inputsForm
-						input#lname(type='text', name='lastname', placeholder='Please enter your last name')
+						input.form-control(type='text', name='lastname', placeholder='Please enter your last name')
 				.row
 					.labelsForm
 						label(for='email') Email
 					.inputsForm
-						input#email(type='email', name='Email', placeholder='Please enter email address')
+						input.form-control(type='email', name='Email', placeholder='Please enter email address')
 				.row
 					.labelsForm
 						label(for='subject') Subject
 					.inputsForm
-						textarea#subject(name='subject', placeholder='Write something here..', style='height:200px')
+						textarea.form-control(name='subject', placeholder='Write something here..', style='height:200px')
 				.row
-					input(type='submit', value='Submit')
+					button.btn.btn-primary Submit
