@@ -13,10 +13,21 @@ html {
 }
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #181818;
+}
+
+input.form-control {
+  background-color: #292929;
+  color: white;
+}
+
+textarea.form-control {
+  background-color: #292929;
+  color: white;
 }
 
 a {
-  color: #00b7ff;
+  color: #7256f6;
 }
 
 .navbar {
@@ -29,17 +40,18 @@ a {
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #555;
+  color: #fff;
   text-decoration: none;
+  transform: scale(1.1);
 }
 
 .navbar .navbar-brand {
-  color: #555;
+  color: #121212;
 }
 
 /* Change navbar styling on scroll */
 .navbar.active {
-  background: #555;
+  background: #121212;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -57,21 +69,48 @@ a {
   color: #fff;
 }
 
+/* .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: left;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+} */
+
+/* Clear floats after the columns */
+.row:after {
+  clear: both;
+}
+
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {
-    background: #555;
+    background: #121212;
   }
 
   .navbar .navbar-brand,
   .navbar .nav-link {
     color: #fff;
   }
-}
-
-/* Clear floats after the columns */
-.row:after {
-  clear: both;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -162,8 +201,8 @@ a {
   .aboutCover {
     position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    padding-top: 60px;
+    /* padding: 50px;
+    padding-top: 60px; */
   }
 
   video#about {
@@ -211,7 +250,8 @@ a {
 
   .projectImage {
     width: 80%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -219,7 +259,8 @@ a {
 
   .serviceImage {
     max-width: 70%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -236,7 +277,8 @@ a {
   }
 
   .formContainer {
-    background-color: #ffffff;
+    background-color: #181818;
+    color: white;
     padding: 20px;
   }
 
@@ -255,7 +297,8 @@ a {
   footer {
     position: bottom;
     width: 100%;
-    background-color: rgb(240, 234, 234);
+    background-color: #292929;
+    color: white;
     padding-bottom: 80px;
   }
 }
@@ -323,6 +366,18 @@ a {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
+    /* margin-left: 25px; */
+    text-align: center;
+  }
+
+  .gridContainer#project,
+  .gridItems#project,
+  .projectImage {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    margin-left: 60px;
+    text-align: center;
   }
 
   h4#footer,
@@ -333,6 +388,7 @@ a {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
+    text-align: center;
   }
 
   .aboutDescriptionContainer {
@@ -346,26 +402,6 @@ a {
     animation: descAnimation 5s;
   }
 
-  .gridContainer,
-  .gridItems,
-  .projectImage,
-  .serviceImage,
-  .altContainer {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 10px;
-  }
-
-  h4#footer,
-  p#contact,
-  h6#email,
-  a#email,
-  p#copyright {
-    display: grid;
-    grid-template-columns: auto;
-    margin-top: 10px;
-  }
-
   .coverContainer {
     /*Cover container for the every page having the cover image*/
     position: relative;
@@ -376,8 +412,8 @@ a {
   .aboutCover {
     position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    padding-top: 60px;
+    /* padding: 50px;
+    padding-top: 60px; */
   }
 
   p#quote {
@@ -419,7 +455,8 @@ a {
 
   .projectImage {
     width: 80%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -427,7 +464,8 @@ a {
 
   .serviceImage {
     max-width: 70%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -444,7 +482,8 @@ a {
   }
 
   .formContainer {
-    background-color: #ffffff;
+    background-color: #181818;
+    color: white;
     padding: 20px;
   }
 
@@ -463,22 +502,9 @@ a {
   footer {
     position: bottom;
     width: 100%;
-    background-color: rgb(240, 234, 234);
+    background-color: #292929;
+    color: white;
     padding-bottom: 80px;
-  }
-
-  footer .gridContainer {
-    margin-left: -60px;
-  }
-
-  p#copyright,
-  p#contact {
-    font-size: 20px;
-  }
-
-  h6#email,
-  a#email {
-    font-size: 20px;
   }
 }
 
@@ -532,6 +558,17 @@ a {
     display: grid;
     grid-template-columns: auto;
     margin-top: 10px;
+    text-align: center;
+  }
+
+  .gridContainer#project,
+  .gridItems#project,
+  .projectImage {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    text-align: center;
   }
 
   h4#footer,
@@ -554,8 +591,8 @@ a {
   .aboutCover {
     position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    padding-top: 60px;
+    /* padding: 50px;
+    padding-top: 60px; */
   }
 
   p#quote {
@@ -597,7 +634,8 @@ a {
 
   .projectImage {
     width: 80%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -605,7 +643,8 @@ a {
 
   .serviceImage {
     max-width: 70%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -622,7 +661,8 @@ a {
   }
 
   .formContainer {
-    background-color: #ffffff;
+    background-color: #181818;
+    color: white;
     padding: 20px;
   }
 
@@ -641,22 +681,9 @@ a {
   footer {
     position: bottom;
     width: 100%;
-    background-color: rgb(240, 234, 234);
+    background-color: #292929;
+    color: white;
     padding-bottom: 80px;
-  }
-
-  footer .gridContainer {
-    margin-left: -60px;
-  }
-
-  p#copyright,
-  p#contact {
-    font-size: 20px;
-  }
-
-  h6#email,
-  a#email {
-    font-size: 20px;
   }
 }
 
@@ -716,23 +743,22 @@ a {
 
   /*Second Cover image on the About Me page*/
   .aboutCover {
-    position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    padding-top: 60px;
+    background-color: #181818;
+    height: 400px;
   }
 
   /*Description on the About me page*/
   .aboutDescriptionContainer {
-    position: absolute;
-    top: 110px;
+    position: relative;
+    top: 50px;
     left: 90px;
-    width: 35%;
-    font-size: 30px;
+    width: 90%;
+    font-size: 25px;
     color: white;
     font-style: italic;
-    -webkit-animation: descAnimation 5s; /*Animation For Safari*/
-    animation: descAnimation 5s; /*Animation for other browser*/
+    -webkit-animation: descAnimation 5s;
+    animation: descAnimation 5s;
   }
 
   /* animation keyframes for safari*/
@@ -823,7 +849,8 @@ a {
   }
 
   /*Making the grid conatiner for the grid display*/
-  .gridContainer {
+  .gridContainer,
+  .gridContainer#project {
     display: grid; /*Grid display for projects and services page*/
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
@@ -831,7 +858,8 @@ a {
   }
 
   /*Items in the grid container*/
-  .gridItems {
+  .gridItems,
+  .gridItems#project {
     font-size: 30px;
     text-align: center;
     align-content: center;
@@ -850,7 +878,8 @@ a {
 
   .projectImage {
     width: 80%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -858,7 +887,8 @@ a {
 
   .serviceImage {
     max-width: 70%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -902,7 +932,8 @@ a {
   }
 
   .formContainer {
-    background-color: #ffffff;
+    background-color: #181818;
+    color: white;
     padding: 20px;
   }
 
@@ -926,7 +957,8 @@ a {
   footer {
     position: bottom;
     width: 100%;
-    background-color: rgb(240, 234, 234);
+    background-color: #292929;
+    color: white;
     padding-bottom: 80px;
   }
 
@@ -1001,23 +1033,22 @@ a {
 
   /*Second Cover image on the About Me page*/
   .aboutCover {
-    position: relative;
     background-attachment: fixed;
-    padding: 50px;
-    padding-top: 60px;
+    background-color: #181818;
+    height: 400px;
   }
 
   /*Description on the About me page*/
   .aboutDescriptionContainer {
-    position: absolute;
-    top: 110px;
+    position: relative;
+    top: 50px;
     left: 90px;
-    width: 35%;
+    width: 90%;
     font-size: 30px;
     color: white;
     font-style: italic;
-    -webkit-animation: descAnimation 5s; /*Animation For Safari*/
-    animation: descAnimation 5s; /*Animation for other browser*/
+    -webkit-animation: descAnimation 5s;
+    animation: descAnimation 5s;
   }
 
   /* animation keyframes for safari*/
@@ -1108,7 +1139,8 @@ a {
   }
 
   /*Making the grid conatiner for the grid display*/
-  .gridContainer {
+  .gridContainer,
+  .gridContainer#project {
     display: grid; /*Grid display for projects and services page*/
     grid-gap: 10px;
     grid-template-columns: auto auto auto;
@@ -1116,7 +1148,8 @@ a {
   }
 
   /*Items in the grid container*/
-  .gridItems {
+  .gridItems,
+  .gridItems#project {
     font-size: 30px;
     text-align: center;
     align-content: center;
@@ -1135,7 +1168,8 @@ a {
 
   .projectImage {
     width: 80%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -1143,7 +1177,8 @@ a {
 
   .serviceImage {
     max-width: 70%;
-    background-color: white;
+    background-color: #292929;
+    color: white;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 25px;
     transition: transform 0.2s; /*Transform transition effect*/
@@ -1187,7 +1222,8 @@ a {
   }
 
   .formContainer {
-    background-color: #ffffff;
+    background-color: #181818;
+    color: white;
     padding: 20px;
   }
 
@@ -1211,7 +1247,8 @@ a {
   footer {
     position: bottom;
     width: 100%;
-    background-color: rgb(240, 234, 234);
+    background-color: #292929;
+    color: white;
     padding-bottom: 80px;
   }
 
@@ -1229,24 +1266,3 @@ a {
     font-size: 20px;
   }
 }
-
-/* footer {
-  position: bottom;
-  width: 100%;
-  background-color: rgb(240, 234, 234);
-  padding-bottom: 80px;
-}
-
-footer .gridContainer {
-  margin-left: -60px;
-}
-
-p#copyright,
-p#contact {
-  font-size: 20px;
-}
-
-h6#email,
-a#email {
-  font-size: 20px;
-} */
