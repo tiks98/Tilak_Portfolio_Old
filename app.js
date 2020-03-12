@@ -31,6 +31,7 @@ db.once("open", () => console.log("We have connected to MongoDB"));
 
 var indexRouter = require("./routes/index");
 var authRouter = require("./routes/auth");
+var contactRouter = require("./routes/contacts");
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -107,6 +108,7 @@ app.use((req, res, next) => {
 app.use("/", authRouter); //routing it to authRouter
 app.use("/", indexRouter); //routing it to indexRouter
 app.use("/users", require("./routes/users")); //routing it to userRouter
+app.use("/", contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
