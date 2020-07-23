@@ -160,6 +160,22 @@ a {
     animation: descAnimation 5s;
   }
 
+  .gridContainer#altContainer,
+  .gridItems#altContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .gridItems#icons {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    text-align: center;
+  }
+
   .gridContainer,
   .gridItems,
   .projectImage,
@@ -169,6 +185,7 @@ a {
     grid-template-columns: auto;
     margin-top: 10px;
     margin-left: 15px;
+    text-align: center;
   }
 
   h4#footer,
@@ -360,6 +377,15 @@ a {
     left: 20px;
     -webkit-animation: descAnimation 5s; /*For Safari*/
     animation: descAnimation 5s;
+  }
+
+  .gridContainer#altContainer,
+  .gridItems#altContainer {
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
   }
 
   .gridContainer,
