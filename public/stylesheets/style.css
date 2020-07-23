@@ -69,32 +69,24 @@ a {
   color: #fff;
 }
 
-/* .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: left;
-  text-decoration: none;
-  margin: 5px 2px;
-}
 .fa:hover {
   opacity: 0.7;
 }
 
 .fa-github {
-  background: #2c4762;
+  /* background: #2c4762; */
   color: white;
 }
 
 .fa-facebook {
-  background: #3b5998;
+  /* background: #3b5998; */
   color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
+  /* background: #007bb5; */
   color: white;
-} */
+}
 
 /* Clear floats after the columns */
 .row:after {
