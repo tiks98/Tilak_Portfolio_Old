@@ -49,6 +49,11 @@ a {
   color: #121212;
 }
 
+.navbar .navbar-brand:hover {
+  color: #121212;
+  transform: scale(1.2);
+}
+
 /* Change navbar styling on scroll */
 .navbar.active {
   background: #121212;
@@ -69,8 +74,50 @@ a {
   color: #fff;
 }
 
+.alert#development {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.skillContainer {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {
+  width: 90%;
+  background-color: #4caf50;
+}
+.css {
+  width: 80%;
+  background-color: #2196f3;
+}
+.js {
+  width: 65%;
+  background-color: #f44336;
+}
+.php {
+  width: 60%;
+  background-color: #808080;
+}
+
 .fa:hover {
   opacity: 0.7;
+  transform: scale(1.4);
 }
 
 .fa-github {
