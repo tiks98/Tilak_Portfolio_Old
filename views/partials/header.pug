@@ -8,34 +8,34 @@
 	Reference: https://getbootstrap.com/docs/4.3/components/navbar/
 
 //- |	This Website is in Development Phase
-.alert#development
-	|  This Website is in Development Phase.
-//- nav.navbar.navbar-dark.bg-dark 
-nav.navbar.navbar-expand-lg.fixed-top.py-3 
+//- .alert#development
+//- 	|  This Website is in Development Phase.
+//- nav.navbar.navbar-expand-lg.fixed-top.py-3
+nav.navbar.navbar-expand-lg.fixed-top.navbar-dark.bg-transparent
 	a.navbar-brand(href='../')
 		img(src='/images/logo1@3x.png', width='50', height='30', alt='logo')
-	button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+	button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo03' aria-controls='navbarTogglerDemo03' aria-expanded='false' aria-label='Toggle navigation')
 		span.navbar-toggler-icon
-	#navbarSupportedContent.collapse.navbar-collapse
+	#navbarTogglerDemo03.collapse.navbar-collapse
 		ul.navbar-nav.mr-auto
 			li.nav-item
-				a.nav-link(href='../')
+				a.nav-link.text-white(href='../')
 					| Home 
 			li.nav-item
-				a.nav-link(href='../about_me') About Me
+				a.nav-link.text-white(href='../about_me') About Me
 			li.nav-item
-				a.nav-link(href='../project') Projects
+				a.nav-link.text-white(href='../project') Projects
 			li.nav-item
-				a.nav-link(href='../services') Services
+				a.nav-link.text-white(href='../services') Services
 			li.nav-item
-				a.nav-link(href='../contact') Contact Me
+				a.nav-link.text-white(href='../contact') Contact Me
 		ul.navbar-nav
 			if isLoggedIn
 				li.nav-item
-					a.nav-link(href='/logout') Logout
+					a.nav-link.text-white(href='/logout') Logout
 			else
 				li.nav-item
-					a.nav-link(href='/login') Login
+					a.nav-link.text-white(href='/login') Login
 				li.nav-item
-					a.nav-link(href='/register') Register
+					a.nav-link.text-white(href='/register') Register
 

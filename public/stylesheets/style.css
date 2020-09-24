@@ -34,19 +34,11 @@ a {
   transition: all 0.4s;
 }
 
-.navbar .nav-link {
-  color: #fff;
-}
-
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-  color: #fff;
+  color: white;
   text-decoration: none;
   transform: scale(1.1);
-}
-
-.navbar .navbar-brand {
-  color: #121212;
 }
 
 .navbar .navbar-brand:hover {
@@ -61,17 +53,17 @@ a {
 }
 
 .navbar.active .nav-link {
-  color: #fff;
+  color: white;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-  color: #fff;
+  color: white;
 }
 
 .alert#development {
@@ -140,20 +132,28 @@ a {
   clear: both;
 }
 
-/* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-  .navbar {
-    background: #121212;
-  }
-
-  .navbar .navbar-brand,
-  .navbar .nav-link {
-    color: #fff;
-  }
+img.cover {
+  display: none;
+  /* background: url(./images/cover.jpg); */
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media only screen and (max-width: 600px) {
+  /* #myVideo { 
+    display: none !important;
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  } */
+
+  /* img.cover {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  } */
+
   .labelsForm,
   .inputsForm,
   input[type="submit"] {
